@@ -1,0 +1,32 @@
+
+      body {
+        background-color: #F0E9D2;
+      }
+
+
+    h1{
+        font-size: 50px;
+        color: #827397;
+      }
+
+      h3{
+        color: #4D4C7D;
+      }
+
+      hr {
+
+        border-style: none;
+        border-top-style: dotted;
+        border-color: grey;
+        border-width: 18px;
+        width: 4%;
+      }
+
+      img {
+        height: 250px;
+        border-top-left-radius: 50% !important;
+        border-top-right-radius: 50% !important;
+        border-bottom-left-radius: 50% !important;
+        border-bottom-right-radius: 50% !important;
+
+      }

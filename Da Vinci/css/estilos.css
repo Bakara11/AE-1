@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.Cuerpo{
+  background-color: #F0E9D2;
+}
+
+header {
+  border: 1px solid #181D31;
+  width:100%;
+  margin-bottom: 15px;
+  height: 150px;
+  background-color:#678983;
+  overflow: hidden;
+}
+
+header .logo{
+  float: left;
+  margin: 10px;
+}
+
+header .logo img{
+  width: 200px;
+  height: 130px;
+}
+
+header .titulo{
+  font-style: italic;
+  font-size: 38px;
+  font-size-adjust: 0.4;
+  color:white;
+}
+
+nav{
+  width: 100%;
+}
+
+nav ul{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+nav ul li{
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+nav ul li a {
+  display: flow-root;
+  color:#fff;
+  background-color:#678983;
+  text-decoration:none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  border: 1px solid #181D31;
+}
+
+nav ul li a:hover {
+  background-color:chocolate;
+}
+
+nav ul li ul {
+  display:none;
+  position:absolute;
+  width:25%;
+}
+
+nav ul li:hover > ul {
+  display:block;
+  z-index: 1;
+}
+
+nav ul li ul li{
+  float: none;
+  width: 99.2%;
+  text-align: center;
+}
+
+nav ul li ul li a {
+  display:block;
+  color:#fff;
+  background-color:#678983;
+  text-decoration:none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  background-color: chocolate;
+  height: 10%;
+}
+
+section{
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 15px;
+  color: #181D31;
+  width: 60%;
+  float: left;
+  height: 50%;
+  margin-bottom: 15px;
+}
+
+section h1{
+  width: 100%;
+  text-align: center;
+}
+
+section p{
+  text-align: justify;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+section img {
+  width: 28%;
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+aside{
+  color: #678983
+  border:1px solid #181D31;
+  margin-right: 1%;
+  width: 35%;
+  float: right;
+  height: 550px;
+  margin-bottom: 50px;
+}
+
+aside img{
+  max-height:220px;
+  width: 80%;
+	filter: grayscale(100%);
+  transition: 1.5s ease-in-out;
+}
+
+aside img:hover{
+	filter: grayscale(0);
+}
+
+footer {
+  border: 1px solid #181D31;
+  clear: both;
+  width: 100%;
+  height: 60px;
+  background-color: #678983;
+}
+
+footer p{
+  color:#fff;
+  font-size: 20px;
+}

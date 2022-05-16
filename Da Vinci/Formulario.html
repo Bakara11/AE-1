@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="maximum-scale=1" href="wide.css">
+  <title>Formulario Contacto</title>
+  <link rel="stylesheet" type="text/css" href="css/formulario.css">
+</head>
+
+<body class="Cuerpo">
+  <header>
+    <!-- Cabecera de la página-->
+    <div class="logo">
+      <img src="imagenes/masones.jpg">
+    </div>
+    <div class="titulo">
+      <h3>
+        Los Masones
+      </h3>
+    </div>
+  </header>
+
+  <nav>
+    <!-- Menú de la página -->
+    <ul>
+      <li><a href="index.html">Inicio</a> </li>
+      <li><a href="">Servicios</a>
+        <ul>
+          <li><a href="">El Priorato</a></li>
+          <li><a href="">El Santo Grial</a></li>
+          <li><a href="">Templo de Jerusalén</a></li>
+        </ul>
+      </li>
+      <li><a href="">Quiénes somos</a>
+        <ul>
+          <li><a href="hugo.html">Hugo Merino</a></li>
+          <li><a href="ana.html">Ana López</a></li>
+          <li><a href="manuel.html">Manuel Prado</a></li>
+        </ul>
+      </li>
+      <li><a href="formulario.html">Contacto</a> </li>
+    </nav>
+
+    <!-- Contenido principal -->
+    <center>
+      <h1><b>Mis Datos de Contacto</b></h1>
+      <b>
+        <fieldset>
+          <legend>Introduzca sus datos personales</legend>
+        <label>Nombre:</label>
+        <input type="text" name="yourName" value="" required
+        placeholder="Escriba su Nombre" size="15">
+        <label>Apellidos:</label>
+        <input type="text" name="yourName" value="" required
+        placeholder="Escriba sus dos apellidos" size="40">
+        <label>Fecha de Nacimiento:</label>
+        <input type="date" name="fecha" required>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+        <legend>Introduzca sus datos de contacto</legend>
+        <label>Mi dirección:</label>
+        <input type="text" name="yourName" value="" required
+        placeholder="Introduzca su dirección" size="40">
+        <label><b>Localidad:</b></label>
+        <select name="Localidad" id="Localidad" required>
+          <option value="37">Álava</option>
+          <option value="34">Albacete</option>
+          <option value="5">Alicante</option>
+          <option value="21">Almeria</option>
+          <option value="14">Asturias</option>
+          <option value="46">Ávila</option>
+          <option value="24">Badajoz</option>
+          <option value="9">Baleares</option>
+          <option value="2">Barcelona</option>
+          <option value="36">Burgos</option>
+          <option value="35">Cáceres</option>
+          <option value="8">Cádiz</option>
+          <option value="27">Cantabria</option>
+          <option value="28">Castellón</option>
+          <option value="52">Ceuta</option>
+          <option value="31">Ciudad Real</option>
+          <option value="19">Córdoba</option>
+          <option value="44">Cuenca</option>
+          <option value="20">Gerona</option>
+          <option value="17">Granada</option>
+          <option value="42">Guadalajara</option>
+          <option value="22">Guipuzcua</option>
+          <option value="29">Huelva</option>
+          <option value="43">Huesca</option>
+          <option value="26">Jaén</option>
+          <option value="12">La Coruña</option>
+          <option value="10">Las Palmas</option>
+          <option value="32">León</option>
+          <option value="33">Lérida</option>
+          <option value="39">Lugo</option>
+          <option value="1">Madrid</option>
+          <option value="6">Málaga</option>
+          <option value="51">Melilla</option>
+          <option value="7">Murcia</option>
+          <option value="25">Navarra</option>
+          <option value="41">Orense</option>
+          <option value="47">Palencia</option>
+          <option value="16">Pontevedra</option>
+          <option value="38">Salamanca</option>
+          <option value="13">Santa Cruz de Tenerife</option>
+          <option value="48">Segovia</option>
+          <option value="4">Sevilla</option>
+          <option value="50">Soria</option>
+          <option value="18">Tarragona</option>
+          <option value="49">Teruel</option>
+          <option value="23">Toledo</option>
+          <option value="3">Valencia</option>
+          <option value="30">Valladolid</option>
+          <option value="11">Vizcaya</option>
+          <option value="45">Zamora</option>
+          <option value="15">Zaragoza</option>
+        </select>
+        <br>
+        <br>
+        <label>Direccion de Email:</label>
+        <input type="email" name="yourEmail" value="usuario@dominio.com" required
+        placeholder="Introduzca su Email" size="30">
+      </fieldset>
+      </b>
+      <form action="servicio.php" method="get">
+        <p><b>Sexo:</b></p>
+        <input type="radio" name="sexo" id="hombre"
+        value="h">
+        <label for="hombre">Hombre</label><br>
+        <input type="radio" name="sexo" id="mujer"
+        value="m">
+        <label for="mujer">Mujer</label> <br>
+      </form>
+      <br>
+      <form action="servicio.php" method="get">
+        <p><b>Formación:</b></p>
+        <label for="estudios">Analista Genetico</label>
+        <input type="checkbox" name="formacion" id="formacion"
+          value="formacion">
+          Indique su nivel (Malo, Regular, Bueno):
+        <input type="range" name="rango"
+          min="1" max="3" list="lista-rango">
+        <datalist id="lista-rango">
+          <option value="1" label="Malo">
+          <option value="2" label="Regular">
+          <option value="3" label="Bueno">
+        </datalist>
+        <br>
+
+        <label for="Biotecnología">Biotecnología</label>
+        <input type="checkbox" name="Biotecnología" id="Biotecnología"
+        value="Biotecnología">
+        Indique su nivel (Malo, Regular, Bueno):
+        <input type="range" name="rango"
+          min="1" max="3" list="lista-rango">
+        <datalist id="lista-rango">
+        <option value="1" label="Malo">
+        <option value="2" label="Regular">
+        <option value="3" label="Bueno">
+        </datalist>
+        <br>
+
+        <label for="Seguidor del MaestroSeguidor del MaestroSeguidor del MaestroSeguidor del Maestro">Seguidor del Maestro</label>
+        <input type="checkbox" name="Seguidor del MaestroSeguidor del MaestroSeguidor del Maestro" id="Seguidor del MaestroSeguidor del Maestro"
+        value="Seguidor del Maestro">
+        Indique su nivel (Malo, Regular, Bueno):
+        <input type="range" name="rango"
+          min="1" max="3" list="lista-rango">
+        <datalist id="lista-rango">
+        <option value="1" label="Malo">
+        <option value="2" label="Regular">
+        <option value="3" label="Bueno">
+        </datalist>
+
+        <br>
+        <br>
+
+        <form class="" action="index.html" method="post" enctype="text/plain">
+          <br>
+          <label><b>Carta de presentación:</b></label><br><br>
+          <textarea name="name" rows="5" cols="60"></textarea><br>
+          <br>
+          <label>¿Quieres añadir tu email?</label>
+          <input type="checkbox" name="" value="">
+          <br>
+          <br>
+        </form>
+        <form class="" action="mailto:davinci@vaticano.vt" method="get">
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Borrar información">
+        </form>
+      </center>
+
+      <!-- Pie de la página -->
+      <footer>
+        <center>
+          <p>
+            <a href="https://c.tenor.com/9RILa239kecAAAAC/mona-lisa-leonardo-da-vinci.gif">La simplicidad es la máxima sofisticación.</a></p>
+          </center>
+
+        </footer>
+        </html>
